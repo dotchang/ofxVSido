@@ -69,7 +69,7 @@ void GR001GUIControler::setup(){
 	gui.add(vsido_connect);
 
 	int baud = 115200; // 9600, 57600, 115200, 1000000
-	vsido.setup(0, baud);
+	vsido.setup("COM6", baud);
 }
 
 void GR001GUIControler::update_joints(float & v)
